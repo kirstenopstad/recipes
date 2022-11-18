@@ -16,6 +16,9 @@
 
 ## Description
 
+### Notes
+Selects for diets: 
+
 This template includes placeholders for:
 
 [x] Screenshots

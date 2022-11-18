@@ -1,9 +1,48 @@
 <!DOCTYPE html>
 <html lang="en-US">
   <head>
-    <title>TEMPLATE</title>
+    <title>Thanksgiving Meal Planner</title>
   </head>
 <body>
+  <div class="container">
+    <h1>Thanksgiving Meal Planner</h1>
+    <p>Need help with your Thanksgiving table? Enter an ingredient you'd like to use and dietary preferences to see a list of possibilities!</p>
+    <form id="meal-planner">
+      <div class="form-group row">
+        <div class="col-5">
+          <label for="ingredient">Key Ingredient</label>
+          <input id="ingredient" type="text" name="ingredient">
+         </div>
+        <label for="diet-pref" class="col-4 col-form-label">Dietary Preference</label> 
+        <div class="col-2">
+          <select id="diet-pref" name="diet-pref" class="custom-select">
+            <option value="&diet=balanced">Balanced</option>
+            <option value="&diet=high-fiber">High-fiber</option>
+            <option value="&diet=high-protein">High-protein</option>
+            <option value="&diet=low-carb">Low-carb</option>
+            <option value="&diet=low-fat">Low-fat</option>
+            <option value="&diet=low-sodium">Low-sodium</option>
+            <option value=""></option checked>
+          </select>
+        </div>
+      </div> 
+      <div class="form-group row">
+        <div class="offset-4 col-8">
+          <button id="meal-ingredient" type="submit" class="btn btn-primary">Submit</button>
+        </div>
+      </div>
+    </form>
+  </div>
 
+  <div id="recipes-div">
+    <ul id="recipes-ul">
+    </ul>
+  </div>
+
+  <div id="recipe-details" class="hidden">
+    <h2>Ingredients</h2>
+    <p id="ingredient-list"></p>
+    <p id="method"></p>
+  </div>
 </body>
 </html>
